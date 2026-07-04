@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Dashboard</title>
+    <style>
+        /* Soft Pista Green Background */
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            margin: 0;
+            background-color: #e4f1e1;
+        }
+
+        /* Pista Green Sidebar */
+        .sidebar {
+            width: 250px;
+            background: #9dc183;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar p {
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: 0.3s;
+            margin: 10px 0;
+        }
+
+        .sidebar p:hover {
+            background: #87a96b;
+            color: #ffe4e1;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-top: 5px solid #ff99cc;
+            /* Soft Pink border */
+        }
+
+        h1 {
+            color: #ff99cc;
+            /* Soft Pink text */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <p>Profile</p>
+        <p>Attendance</p>
+        <p>Leave Request</p>
+    </div>
+    <div class="main-content">
+        <div class="card">
+            <h1>Welcome to HRMS Dashboard</h1>
+            <p>You can see all your office information here.</p>
+        </div>
+    </div>
+</body>
+
+</html>

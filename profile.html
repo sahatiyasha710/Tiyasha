@@ -1,0 +1,66 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Profile</title>
+    <style>
+        body { font-family: 'Poppins', sans-serif; margin: 0; display: flex; background-color: #e4f1e1; }
+        
+        .sidebar { width: 250px; background: #9dc183; color: white; height: 100vh; padding: 20px; }
+        .sidebar p { padding: 15px; cursor: pointer; border-radius: 12px; margin: 10px 0; color: white; }
+        .sidebar p:hover { background: #87a96b; }
+        .active { background: #87a96b; border-left: 5px solid #ff99cc; }
+
+        .main-content { flex: 1; display: flex; justify-content: center; align-items: center; padding: 20px; }
+        
+        .profile-card { 
+            background: white; padding: 40px; border-radius: 30px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); width: 450px;
+            text-align: center; border: 2px solid #ff99cc;
+        }
+        
+        .input-group { margin-bottom: 15px; text-align: left; }
+        .input-group label { display: block; font-size: 14px; color: #777; margin-bottom: 5px; }
+        .input-group input { 
+            width: 100%; padding: 10px; border: 1px solid #ddd; 
+            border-radius: 8px; box-sizing: border-box; 
+        }
+        
+        .save-btn { 
+            margin-top: 20px; padding: 12px 40px; background: #ff99cc; 
+            color: white; border: none; border-radius: 20px; cursor: pointer; font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="dashboard.html" style="text-decoration:none;"><p>Dashboard</p></a>
+        <p class="active">Profile</p>
+        <p>Attendance</p>
+        <p>Leave Request</p>
+    </div>
+    <div class="main-content">
+        <div class="profile-card">
+            <h2>Edit Profile</h2>
+            <div class="input-group">
+                <label>Name</label>
+                <input type="text" value="Tiyasha Roy">
+            </div>
+            <div class="input-group">
+                <label>Designation</label>
+                <input type="text" value="Senior HR Executive">
+            </div>
+            <div class="input-group">
+                <label>Department</label>
+                <input type="text" value="Human Resources">
+            </div>
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" value="tiyasha.roy@hrms.com">
+            </div>
+            <button class="save-btn">Save Changes</button>
+        </div>
+    </div>
+</body>
+</html>

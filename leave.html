@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Leave Request - Tiyasha</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            display: flex;
+            background-color: #e4f1e1;
+        }
+
+        /* Sidebar - Pista Green */
+        .sidebar {
+            width: 250px;
+            background: #9dc183;
+            color: white;
+            height: 100vh;
+            padding: 20px;
+            box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar p {
+            padding: 15px;
+            cursor: pointer;
+            border-radius: 12px;
+            margin: 10px 0;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .sidebar p:hover {
+            background: #87a96b;
+        }
+
+        .active {
+            background: #87a96b;
+            border-left: 5px solid #ff99cc;
+        }
+
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        /* Form Card - Floral & Pink Aesthetic */
+        .form-card {
+            background: white;
+            padding: 40px;
+            border-radius: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            width: 450px;
+            text-align: center;
+            border: 2px solid #ff99cc;
+            background-image: radial-gradient(#ffcce6 10%, transparent 10%);
+            background-size: 30px 30px;
+        }
+
+        h2 {
+            color: #ff99cc;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+
+        .submit-btn {
+            margin-top: 20px;
+            padding: 12px 40px;
+            background: #ff99cc;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .submit-btn:hover {
+            background: #ff77bb;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <a href="dashboard.html" style="text-decoration:none;">
+            <p>Dashboard</p>
+        </a>
+        <a href="profile.html" style="text-decoration:none;">
+            <p>Profile</p>
+        </a>
+        <a href="attendance.html" style="text-decoration:none;">
+            <p>Attendance</p>
+        </a>
+        <p class="active">Leave Request</p>
+    </div>
+    <div class="main-content">
+        <div class="form-card">
+            <h2>Request Leave</h2>
+            <div class="input-group">
+                <label>Leave Type</label>
+                <select>
+                    <option>Sick Leave</option>
+                    <option>Casual Leave</option>
+                    <option>Earned Leave</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label>Date</label>
+                <input type="date">
+            </div>
+            <div class="input-group">
+                <label>Reason</label>
+                <textarea rows="4" placeholder="Enter your reason here..."></textarea>
+            </div>
+            <button class="submit-btn">Submit Request</button>
+        </div>
+    </div>
+</body>
+
+</html>
